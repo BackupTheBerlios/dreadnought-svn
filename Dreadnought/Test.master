@@ -1,0 +1,3 @@
+<%@ Master Language="C#" Inherits="Dreadnought.Master" %><form id="form" runat="server">
+    <div><asp:contentplaceholder id="ContentPlaceholder" runat="server"></asp:contentplaceholder></div>
+</form>

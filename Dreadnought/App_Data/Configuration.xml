@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Dreadnought>
+	
+	<DefaultSettings Title="powered by Dreadnought" Theme="Dreadnought" Master="" >
+		<Text>
+			<![CDATA[
+				Welcome to Dreadnought, the slim and fast ASP.NET Content Management System. <br />Visit <a href="http://www.sachsenhofer.com" target="_blank">www.sachsenhofer.com</a> for more information.
+			]]>
+		</Text>
+		<Master_Text>
+			<![CDATA[
+				<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>powered by Dreadnought</title>
+</head>
+<body>
+    <form id="form" runat="server">
+    <div>
+        <asp:contentplaceholder id="ContentPlaceholder" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>			
+			]]>
+		</Master_Text>
+	</DefaultSettings>
+
+	<Directories Invalid="App_Data/|App_Code/|App_Themes/|Dreadnought/" />
+		
+</Dreadnought>
