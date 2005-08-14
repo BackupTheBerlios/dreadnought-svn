@@ -56,8 +56,5 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="User\" />
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

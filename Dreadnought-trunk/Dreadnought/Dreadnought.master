@@ -1,20 +1,29 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Dreadnought.master.cs" Inherits="Dreadnought.Pages.Dreadnought_Master" %>
-
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Dreadnought.master.cs"
+    Inherits="Dreadnought.Pages.Dreadnought_Master" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Untitled Page</title>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:Literal ID="lblMessage" runat="server" EnableViewState="False"></asp:Literal>
-        <asp:contentplaceholder id="ContentPlaceHolder" runat="server">
-        </asp:contentplaceholder>
-        <br /><br />
-        powered by Dreadnought CMS<br />
-        (c) 2005 Hannes Sachsenhofer&nbsp;</div>
+        <div>
+            <div class="Navigation">
+                <asp:HyperLink ID="hplEditPage" runat="server">Edit page</asp:HyperLink>
+                |
+                <asp:HyperLink ID="hplEditPageDetails" runat="server">Edit page details</asp:HyperLink>
+                |
+                <asp:HyperLink ID="hplCreatePage" runat="server">Create page</asp:HyperLink>
+                |
+                <asp:HyperLink ID="hplDeletePage" runat="server">Delete page</asp:HyperLink>
+                |
+                <asp:HyperLink ID="hplManagePages" runat="server">Manage pages</asp:HyperLink></div>
+            <asp:Literal ID="lblMessage" runat="server" EnableViewState="False"></asp:Literal>
+            <asp:ContentPlaceHolder ID="ContentPlaceholder" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="Copyright">
+                powered by <a href="http://dreadnought.berlios.de">Dreadnought v0.1</a> - (c) 2005
+                <a href="http://www.sachsenhofer.com">Hannes Sachsenhofer</a></div>
+        </div>
     </form>
 </body>
 </html>

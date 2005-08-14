@@ -1,4 +1,4 @@
-<%@ Page Language="C#" MasterPageFile="~/Dreadnought/Dreadnought.master" AutoEventWireup="true"
+<%@ Page Language="C#" MasterPageFile="~/Dreadnought/Dreadnought.master" AutoEventWireup="true" Theme="Dreadnought"
     CodeFile="CreatePage.aspx.cs" Inherits="Dreadnought.Pages.CreatePage" Title="Dreadnought : Create page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder" runat="Server">

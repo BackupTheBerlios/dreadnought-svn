@@ -71,8 +71,7 @@ namespace Dreadnought {
 			if (!Exists)
 				throw new PageDoesNotExistException("The master '" + relativePath + "' does not exist.");
 
-			foreach (string invalidDirectory in Base.Configuration.Invalid_Directories)
-				if (relativeDirectory.ToLower().StartsWith(invalidDirectory))
+			if (Base.IsAnInvalidDirectory(relativePath))
 					throw new InvalidDirectoryException("It is not allowed to load a master from the directory '" + relativeDirectory + "'.");
 
 			StreamReader reader = new StreamReader(PhysicalPath);

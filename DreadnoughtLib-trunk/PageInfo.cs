@@ -123,10 +123,8 @@ namespace Dreadnought {
 			if (!Exists)
 				throw new PageDoesNotExistException("The page '" + relativePath + "' does not exist.");
 
-			foreach (string invalidDirectory in Base.Configuration.Invalid_Directories)
-				if (relativeDirectory.ToLower().StartsWith(invalidDirectory))
-					throw new InvalidDirectoryException("It is not allowed to load a page from the directory '" + relativeDirectory + "'.");
-
+			if (Base.IsAnInvalidDirectory(relativePath))
+				throw new InvalidDirectoryException("It is not allowed to load a page from the directory '" + relativeDirectory + "'.");
 
 			StreamReader reader = new StreamReader(PhysicalPath);
 			string input = reader.ReadToEnd().Trim();
@@ -216,7 +214,7 @@ namespace Dreadnought {
 
 		public void SetContentPlaceholderText(string contentPlaceholder, string text) {
 			if (contentPlaceholder.Length <= 0) {
-				this.text = text;
+				this.text = "<html><head></head><body>" + text + "</body></html>";
 				return;
 			}
 

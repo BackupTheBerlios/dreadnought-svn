@@ -3,8 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DreadnoughtLib", "DreadnoughtLib-trunk\DreadnoughtLib.csproj", "{B0C1B1DF-05EC-4C8E-BA34-3A3A069FC1BE}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "E:\...\Dreadnought-trunk\", "Dreadnought-trunk\", "{6E75C201-E299-491C-AC4B-4D89A9B0427A}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "e:\...\Dreadnought-trunk\", "Dreadnought-trunk\", "{6E75C201-E299-491C-AC4B-4D89A9B0427A}"
 	ProjectSection(WebsiteProperties) = preProject
+		ProjectReferences = "{B0C1B1DF-05EC-4C8E-BA34-3A3A069FC1BE}|DreadnoughtLib.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/Dreadnought-trunk"
 		Debug.AspNetCompiler.PhysicalPath = "Dreadnought-trunk\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Dreadnought-trunk\"
@@ -24,32 +25,24 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "E:\...\Dreadnought-trunk\",
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|.NET = Debug|.NET
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
-		Release|.NET = Release|.NET
 		Release|Any CPU = Release|Any CPU
 		Release|Mixed Platforms = Release|Mixed Platforms
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B0C1B1DF-05EC-4C8E-BA34-3A3A069FC1BE}.Debug|.NET.ActiveCfg = Debug|Any CPU
 		{B0C1B1DF-05EC-4C8E-BA34-3A3A069FC1BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0C1B1DF-05EC-4C8E-BA34-3A3A069FC1BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0C1B1DF-05EC-4C8E-BA34-3A3A069FC1BE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{B0C1B1DF-05EC-4C8E-BA34-3A3A069FC1BE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{B0C1B1DF-05EC-4C8E-BA34-3A3A069FC1BE}.Release|.NET.ActiveCfg = Release|Any CPU
 		{B0C1B1DF-05EC-4C8E-BA34-3A3A069FC1BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0C1B1DF-05EC-4C8E-BA34-3A3A069FC1BE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B0C1B1DF-05EC-4C8E-BA34-3A3A069FC1BE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{B0C1B1DF-05EC-4C8E-BA34-3A3A069FC1BE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{6E75C201-E299-491C-AC4B-4D89A9B0427A}.Debug|.NET.ActiveCfg = Debug|.NET
-		{6E75C201-E299-491C-AC4B-4D89A9B0427A}.Debug|.NET.Build.0 = Debug|.NET
 		{6E75C201-E299-491C-AC4B-4D89A9B0427A}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{6E75C201-E299-491C-AC4B-4D89A9B0427A}.Debug|Any CPU.Build.0 = Debug|.NET
 		{6E75C201-E299-491C-AC4B-4D89A9B0427A}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
 		{6E75C201-E299-491C-AC4B-4D89A9B0427A}.Debug|Mixed Platforms.Build.0 = Debug|.NET
-		{6E75C201-E299-491C-AC4B-4D89A9B0427A}.Release|.NET.ActiveCfg = Debug|.NET
-		{6E75C201-E299-491C-AC4B-4D89A9B0427A}.Release|.NET.Build.0 = Debug|.NET
 		{6E75C201-E299-491C-AC4B-4D89A9B0427A}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{6E75C201-E299-491C-AC4B-4D89A9B0427A}.Release|Any CPU.Build.0 = Debug|.NET
 		{6E75C201-E299-491C-AC4B-4D89A9B0427A}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
 		{6E75C201-E299-491C-AC4B-4D89A9B0427A}.Release|Mixed Platforms.Build.0 = Debug|.NET
 	EndGlobalSection

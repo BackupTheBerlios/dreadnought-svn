@@ -39,20 +39,38 @@ namespace Dreadnought.Pages {
 			}
 
 			if (!IsPostBack) {
-				txtMaster.Text = pageInfo.Master;
-				txtTheme.Text = pageInfo.Theme;
+				drpTheme.Items.Add(new ListItem("No theme", ""));
+				drpMaster.Items.Add(new ListItem("No master", ""));
+
+				foreach (string theme in Base.Themes)
+					drpTheme.Items.Add(new ListItem("Theme '" + theme + "'", theme));
+
+				foreach (string master in Base.Masters)
+					drpMaster.Items.Add(new ListItem("Master '" + master + "'", "~/" + master));
+
+				ListItem selectedMaster = drpMaster.Items.FindByValue(pageInfo.Master);
+				if (selectedMaster != null)
+					selectedMaster.Selected = true;
+
+				ListItem selectedTheme = drpTheme.Items.FindByValue(pageInfo.Theme);
+				if (selectedTheme != null)
+					selectedTheme.Selected = true;
+
 				txtTitle.Text = pageInfo.Title;
 			}
 		}
 
 
 		void DisableAll() {
+			drpTheme.Enabled = false;
+			drpMaster.Enabled = false;
+			txtTitle.Enabled = false;
 			btnEdit.Enabled = false;
 		}
 
 		protected void btnEdit_Click(object sender, EventArgs e) {
-			pageInfo.Master = txtMaster.Text;
-			pageInfo.Theme = txtTheme.Text;
+			pageInfo.Master = drpMaster.SelectedValue;
+			pageInfo.Theme = drpTheme.SelectedValue;
 			pageInfo.Title = txtTitle.Text;
 
 			try { //there should be no exception, but just to make sure
