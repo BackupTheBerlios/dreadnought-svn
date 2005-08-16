@@ -15,6 +15,15 @@ namespace Dreadnought {
 			}
 		}
 
+		static List<User> users;
+		public static List<User> Users {
+			get {
+				if (users == null)
+					users = User.Load();
+				return users;
+			}
+		}
+
 		public static string[] Themes {
 			get {
 				List<string> themes = new List<string>();
@@ -59,6 +68,10 @@ namespace Dreadnought {
 				if (relativeDirectory.ToLower().StartsWith(invalidDirectory))
 					return true;
 			return false;
+		}
+
+		public static string Hash(string stringToHash) {
+			return System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(stringToHash, "md5");
 		}
 	}
 }

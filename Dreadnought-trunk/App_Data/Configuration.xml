@@ -5,12 +5,12 @@
 	<DefaultSettings Title="powered by Dreadnought" Theme="Dreadnought" Master="" >
 		<Text>
 			<![CDATA[
-				Welcome to Dreadnought, the slim and fast ASP.NET Content Management System. <br />Visit <a href="http://www.sachsenhofer.com" target="_blank">www.sachsenhofer.com</a> for more information.
+Welcome to Dreadnought, the slim and fast ASP.NET Content Management System. <br />Visit <a href="http://www.sachsenhofer.com" target="_blank">www.sachsenhofer.com</a> for more information.
 			]]>
 		</Text>
 		<Master_Text>
 			<![CDATA[
-				<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>

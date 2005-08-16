@@ -12,4 +12,8 @@ namespace Dreadnought {
 		public InvalidDirectoryException(string message) : base(message) { }
 	}
 
+	public class UserAlreadyExistsException : Exception {
+		public UserAlreadyExistsException(string message) : base(message) { }
+	}
+
 }

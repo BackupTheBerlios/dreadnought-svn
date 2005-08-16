@@ -37,6 +37,8 @@
   <ItemGroup>
     <Compile Include="Base.cs" />
     <Compile Include="Configuration.cs" />
+    <Compile Include="User.cs">
+    </Compile>
     <Compile Include="MasterInfo.cs" />
     <Compile Include="Master.cs">
       <SubType>ASPXCodeBehind</SubType>

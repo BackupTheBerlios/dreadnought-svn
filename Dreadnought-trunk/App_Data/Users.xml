@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dreadnought>
+  <User Name="Hannes Sachsenhofer" Password="Hannes Sachsenhofer" Level="Administrator" />
+  <User Name="test" Password="test" Level="Anonymous" />
+</Dreadnought>
